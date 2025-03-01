@@ -4,16 +4,16 @@ rs:
 
 .PHONY: mm
 mm:
-	uv run manage.py makemigrations
+	uv run djangoRecomm/manage.py makemigrations
 
 .PHONY: mig
 mig:
-	uv run manage.py migrate
+	uv run djangoRecomm/manage.py migrate
 
 .PHONY: csu
 mig:
-	uv run manage.py createsuperuser
+	uv run djangoRecomm/manage.py createsuperuser
 
 .PHONY: sa
 mig:
-	uv run manage.py startapp
+	uv run djangoRecomm/manage.py startapp
