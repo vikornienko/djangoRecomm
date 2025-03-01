@@ -3,7 +3,23 @@ name = "djangorecomm"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-requires-python = ">=3.13"
+requires-python = ">=3.12"
 dependencies = [
+    "celery>=5.4.0",
     "django>=5.1.6",
+    "django-allauth>=65.4.1",
+    "django-celery-beat>=2.7.0",
+    "django-celery-results>=2.5.1",
+    "django-htmx>=1.22.0",
+    "faker>=36.1.1",
+    "numpy>=2.2.3",
+    "python-decouple>=3.8",
+    "redis>=5.2.1",
+    "scikit-surprise>=1.1.4",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3.4",
+    "pytest-django>=4.10.0",
 ]
