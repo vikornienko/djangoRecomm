@@ -11,9 +11,9 @@ mig:
 	uv run djangoRecomm/manage.py migrate
 
 .PHONY: csu
-mig:
+csu:
 	uv run djangoRecomm/manage.py createsuperuser
 
 .PHONY: sa
-mig:
+sa:
 	uv run djangoRecomm/manage.py startapp
